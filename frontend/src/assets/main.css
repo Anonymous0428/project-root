@@ -1,0 +1,22 @@
+@import './base.css';
+
+#app {
+  margin: 0 auto;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: #000;
+  transition: 0.4s;
+  padding: 5px 18px;
+}
+ul li{
+  list-style: none;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
