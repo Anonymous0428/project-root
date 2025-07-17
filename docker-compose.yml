@@ -1,18 +1,18 @@
 version: '3.8'
 
 services:
-  api:
-    build: ./api
+  backend:
+    build: ./backend
     ports:
       - "3000:3000"
     environment:
       - NODE_ENV=production
     restart: unless-stopped
 
-  portfolio:
-    build: ./portfolio
+  frontend:
+    build: ./frontend
     ports:
       - "8080:80"
     depends_on:
-      - api
+      - backend
     restart: unless-stopped
