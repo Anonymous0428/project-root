@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const port = 3000;
-import taskRouter from './routers/tasksroutes';
+import taskRouter from './routers/tasksroutes.js';
 
 app.use(express.json());
 
