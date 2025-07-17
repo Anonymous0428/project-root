@@ -48,3 +48,12 @@ npm run lint
 
 <!-- URL du déploiement Vercel -->
 
+https://frontend-docker-ten.vercel.app/
+
+<!-- Détails des routes backends -->
+
+taskRouter.get("/", tasksController.getTask) <!-- Récupération de toutes les tâches  -->
+taskRouter.get("/:id", tasksController.getTaskById) <!-- Récupération de tâche par id -->
+taskRouter.post("/", tasksController.createTask) <!-- Ajout d'une nouvelle tâche  -->
+taskRouter.put("/:id", tasksController.updateTask) <!-- Modification d'une tâche via son id -->
+taskRouter.delete("/:id", tasksController.deleteTask) <!-- Suppression d'une tâche via son id  -->
